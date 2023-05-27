@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Listening to Nodes</title>
   <style>
-   div {
-     border: 1px solid red;
-     padding: 6px;
-     min-height: 12px;
-   }
+    div {
+      border: 1px solid red;
+      padding: 6px;
+      min-height: 12px;
+    }
   </style>
 </head>
 <body>
@@ -35,6 +35,11 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript" src="index.js"></script>
+  <script type="text/javascript">
+    const button = document.getElementById('button');
+    button.addingEventListener('click', () => {
+      console.log('Button clicked!');
+    });
+  </script>
 </body>
 </html>
